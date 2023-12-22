@@ -2,6 +2,7 @@ import Image from "next/image";
 import Photo from "./Components/Photo";
 import Description from "./Components/Description";
 import ProjectCard from "./Components/ProjectCard";
+import Contact from "./Components/Contact";
 
 const projects = [
   {
@@ -38,6 +39,12 @@ export default function Home() {
           {projects.map((project, idx) => (
             <ProjectCard key={idx} project={project} />
           ))}
+        </div>
+      </section>
+      <section>
+        <h1 className="text-lg font-bold">Contact Me</h1>
+        <div className="flex mt-5 justify-between">
+          <Contact />
         </div>
       </section>
     </>
