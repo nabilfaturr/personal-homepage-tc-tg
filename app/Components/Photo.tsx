@@ -4,12 +4,13 @@ import profilePicture from "@/public/photo.png";
 const Photo = () => {
   return (
     <>
-      <div className="rounded-full border overflow-hidden flex">
+      <div>
         <Image
           src={profilePicture}
           alt="profile-picture"
-          width={150}
-          height={150}
+          width={200}
+          height={200}
+          className="rounded-full"
         />
       </div>
     </>
